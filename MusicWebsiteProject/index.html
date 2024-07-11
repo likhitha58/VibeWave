@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VibeWave</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Gruppo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- NAVIGATION BAR -->
+      <div class="navbar">
+        <!-- title icon -->
+        <div class="welcome-tab border">
+          VibeWave
+          <i
+            class="fa-solid fa-music"
+            style="background-color: #e6b9a6; border-radius: 50%"
+          ></i>
+        </div>
+        <!-- notification icon -->
+        <div class="notif border">
+          <i class="fa-regular fa-bell"></i>
+        </div>
+        <!-- menu icon -->
+        <div class="menu border">
+          <i class="fa-solid fa-list"></i>
+        </div>
+        <!-- account  -->
+        <div class="account border">Account</div>
+        <!-- search bar -->
+        <div class="search-bar border">
+          <input placeholder="Search your Music..." class="search-input" />
+          <div class="search-icon border">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <!-- folder icon -->
+        <div class="folder border">
+          <i class="fa-regular fa-folder"></i>
+        </div>
+        <!-- create playlist -->
+        <div class="createtape border">Create Mixtape</div>
+      </div>
+    </header>
+    <main>
+      <!-- SUGGESTED PLAYLISTS -->
+      <div class="main-content">
+        <div class="suggested border">
+          Suggested MixTapes for you
+          <div class="trending border">Trending Tracks</div>
+          <div class="billboard border">Billboard Hot 100</div>
+          <div class="toptracks border">Your top Tracks</div>
+          <div class="likedsongs border">Liked Tracks</div>
+        </div>
+        <!-- GENRE SELECTION -->
+        <div class="genre border">
+          Choose your Genre!
+          <div
+            id="pop"
+            class="genretype border"
+            style="background-image: url(pop.png); background-size: cover"
+          >
+            Pop
+          </div>
+          <div
+            id="hiphop"
+            class="genretype border"
+            style="background-image: url(hiphop.png); background-size: cover"
+          >
+            Hip Hop
+          </div>
+          <div
+            id="jazz border"
+            class="genretype border"
+            style="background-image: url(jazz.png); background-size: cover"
+          >
+            Jazz
+          </div>
+          <div
+            id="spiritual border"
+            class="genretype border"
+            style="background-image: url(spiritual.jpg); background-size: cover"
+          >
+            Spiritual
+          </div>
+          <div
+            id="indie border"
+            class="genretype border"
+            style="background-image: url(indie.jpg); background-size: cover"
+          >
+            Indie
+          </div>
+          <div
+            id="randb border"
+            class="genretype border"
+            style="
+              background-image: url(randb.png);
+              background-size: cover;
+              color: #939185;
+            "
+          >
+            R&B
+          </div>
+          <div
+            id="electric border"
+            class="genretype border"
+            style="background-image: url(electric.png); background-size: cover"
+          >
+            Electric
+          </div>
+          <div
+            id="party border"
+            class="genretype border"
+            style="background-image: url(party.jpg); background-size: cover"
+          >
+            Party
+          </div>
+          <div
+            id="workout border"
+            class="genretype border"
+            style="background-image: url(workout.png); background-size: cover"
+          >
+            Workout
+          </div>
+          <div
+            id="classical border"
+            class="genretype border"
+            style="background-image: url(classical.png); background-size: cover"
+          >
+            Classical
+          </div>
+        </div>
+        <!-- CURRENT PLAYING SONG -->
+        <div class="center-part">
+          <div class="radio-shape">
+            <div class="outer">
+              <div class="inner">
+                <div class="inner-core">
+                  <div class="album-pic"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="song-length">
+            1:26
+            <div class="media-icon">
+              <div class="how-far-played border"></div>
+            </div>
+            3:24
+          </div>
+          <div class="buttons">
+            <div class="icon border">
+              <i class="fa-solid fa-repeat"></i>
+            </div>
+            <div class="icon border">
+              <i class="fa-solid fa-backward-step"></i>
+            </div>
+            <div class="icon border">
+              <i class="fa-solid fa-pause"></i>
+            </div>
+            <div class="icon border">
+              <i class="fa-solid fa-forward-step"></i>
+            </div>
+            <div class="icon border">
+              <i class="fa-solid fa-shuffle"></i>
+            </div>
+          </div>
+          <div class="current-song border">Believer-Imagine Dragons</div>
+        </div>
+        <!-- lyrics and upnext section -->
+        <div class="lyrics-upnext">
+          <div class="queue">
+            <div class="queue-songs border">Next-up..</div>
+            <div class="next-up border">Thunder-Imagine Dragons</div>
+            <div class="next-up border">Starboy-The Weeknd</div>
+            <div class="next-up border">Drag me Down-One Direction</div>
+            <div class="next-up border">Circles-Post Malone</div>
+            <div class="next-up border">Sunflower-Post Malone</div>
+            <div class="next-up border">Born To Shine-Diljit Dosanjh</div>
+            <div class="next-up border">As it Was-Harry Styles</div>
+          </div>
+          <div class="lyric-section border">
+            <div class="lyrics">Lyrics..</div>
+            <p class="text">
+              Third things third
+              <br />
+              Send a prayer to the
+              <br />
+              ones up above All the hate...
+            </p>
+          </div>
+        </div>
+        <!-- LANGUAGE SECTION -->
+        <div class="language">
+          Choose Language
+          <div
+            class="lang border"
+            style="background-image: url(english.jpeg); background-size: cover"
+          >
+            English
+          </div>
+          <div
+            class="lang border"
+            style="background-image: url(hindii.jpg); background-size: cover"
+          >
+            Hindi
+          </div>
+          <div
+            class="lang border"
+            style="background-image: url(punjabi.jpeg); background-size: cover"
+          >
+            Punjabi
+          </div>
+          <div
+            class="lang border"
+            style="background-image: url(DSP.jpeg); background-size: cover"
+          >
+            Telugu
+          </div>
+          <div
+            class="lang border"
+            style="background-image: url(tamil.webp); background-size: cover"
+          >
+            Tamil
+          </div>
+          <div
+            class="lang border"
+            style="background-image: url(marathi.avif); background-size: cover"
+          >
+            Marathi
+          </div>
+          <div
+            class="lang border"
+            style="background-image: url(afro.jpg); background-size: cover"
+          >
+            Afrobeat
+          </div>
+        </div>
+        <!-- VIBE SECTION -->
+        <div class="vibe">
+          Whats your vibe like?
+          <div
+            class="vibez border"
+            style="background-image: url(rainy.jpg); background-size: cover"
+          >
+            Rainy day Mixtape
+          </div>
+          <div
+            class="vibez border"
+            style="background-image: url(study.jpg); background-size: cover"
+          >
+            Study tunes
+          </div>
+          <div
+            class="vibez border"
+            style="background-image: url(partyvibe.jpg); background-size: cover"
+          >
+            Party Blasts
+          </div>
+          <div
+            class="vibez border"
+            style="
+              background-image: url(motivation.jpg);
+              background-size: cover;
+            "
+          >
+            Motivational
+          </div>
+          <div
+            class="vibez border"
+            style="background-image: url(lofi.jpg); background-size: cover"
+          >
+            Lofi tracks
+          </div>
+          <div
+            class="vibez border"
+            style="background-image: url(vintage.jpg); background-size: cover"
+          >
+            Vintage India
+          </div>
+          <div
+            class="vibez border"
+            style="background-image: url(sleep.jpg); background-size: cover"
+          >
+            Sleep-Loop
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="footer">
+      <div class="footer-content border">About Us</div>
+      <div class="footer-content border">Help</div>
+      <div class="footer-content border">Settings</div>
+      <div class="footer-content border">Privacy Center</div>
+      <div class="footer-content border">Accessibility</div>
+    </div>
+  </body>
+</html>
